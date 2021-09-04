@@ -1,0 +1,74 @@
+@import 'public/fonts/font.css';
+
+@import 'variables';
+@import 'assets';
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+.layer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+*,
+*::after,
+*::before {
+  line-height: 100%;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+input {
+  text-overflow: ellipsis;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: $mw;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+@media (max-width: $md2) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: $md3) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: $md4) {
+  body {
+    overflow-x: hidden;
+  }
+}
