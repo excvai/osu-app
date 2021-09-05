@@ -2,6 +2,7 @@ import cors from 'cors';
 import express from 'express';
 import { config } from './config/default';
 import { authRouter } from './routes/auth.route';
+import { usersRouter } from './routes/users.route';
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(
 app.use(express.json());
 
 app.use('/api/auth', authRouter);
+app.use('/api/users', usersRouter);
 
 const start = async () => {
   try {
