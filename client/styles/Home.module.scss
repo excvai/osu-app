@@ -1,2 +1,10 @@
 .home {
+    padding: 16px 0;
+}
+
+.main {
+    &Content {
+        display: flex;
+        justify-content: center;
+    }
 }

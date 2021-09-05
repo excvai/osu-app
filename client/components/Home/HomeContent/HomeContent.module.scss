@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.ava {
+    min-width: 500px;
+    width: 50%;
+    position: relative;
+    height: 300px;
+}

@@ -1,2 +1,36 @@
 .header {
+    height: 50px;
+    background-color: rgb(92, 142, 166);
+
+    &Wrapper {
+        height: 100%;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.authorize {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    &Img {
+        position: relative;
+        width: 30px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            fill: #fff;
+        }
+    }
 }
